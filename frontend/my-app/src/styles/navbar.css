@@ -1,0 +1,37 @@
+.navbar {
+  border: 1px solid rgba(255, 255, 255, 0.31);
+  background: #5c4f0570;
+  box-shadow: 0px 2px 19.5px 0px rgba(219, 184, 0, 0.2);
+  backdrop-filter: blur(14.5px);
+  position: fixed;
+  width: 90%;
+  top: 40px;
+  margin: auto;
+  z-index: 9999;
+}
+.nav_child1 > div > p:nth-child(1) {
+  color: #ffc603;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Arial, sans-serif;
+  font-size: 16.003px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.56px;
+}
+.nav_links > div > a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16.5px;
+}
+.nav_links > button {
+  background: #f9d326;
+  width: 187px;
+  height: 55px;
+  border-radius: 10px;
+}
