@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* css for container  */
+.container {
+  padding: 132px 20px 10px 8px;
+  gap: 8px;
+  margin-left: 80px;
+  background-color: #211d0d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.first_child {
+  width: 991px;
+  padding: 56px 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 452px;
+  position: absolute;
+  top: -45px;
+  transform: translateY(-45%);
+  border-radius: 28px;
+  border: 4px solid #f9d326;
+  background-color: #0d0e11;
+}
+
+.first_child div h4 {
+  color: #fff;
+  font-family: "Kanit", sans-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.first_child div h5 {
+  color: #fecc00;
+  font-family: "Kanit", sans-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.top_child {
+  display: flex;
+  gap: 17px;
+}
+.top_child div {
+  display: flex;
+  padding: 18px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 49px;
+  background: linear-gradient(135deg, #9c530f 0%, #cfaf06 99.74%);
+  cursor: pointer;
+}
+
+.second_child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.second_child p {
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.053px;
+  opacity: 0.7;
+}

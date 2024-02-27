@@ -1,0 +1,150 @@
+.header_box>div>h1 {
+    color: #FFFFFF;
+    font-family: Kanit, Arial, Helvetica, sans-serif;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.header_box>div>h1>span {
+    color: #FECC00;
+}
+
+.header_box>div>img {
+    bottom: -15px;
+    right: -10px;
+}
+
+.header_box>p {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 169.432%;
+}
+
+.token_box {
+    width: 314px;
+    padding: 184px 8px 40px 8px;
+    border-radius: 12px;
+    border: 3px solid transparent;
+    background: linear-gradient(5deg, #141411, #141411, #141411) padding-box,
+        linear-gradient(5deg, #F9D326, #252525, #F9D326) border-box;
+    backdrop-filter: blur(13px);
+    cursor: pointer;
+}
+
+.token_box>img {
+    width: 111px;
+    height: 111px;
+    left: 101px;
+    top: 40.112px;
+    transition: all 0.3s;
+}
+
+.token_box:hover img {
+    top: -50px;
+    transform: rotate(360deg);
+}
+
+.token_box>div:nth-child(3) {
+    border-radius: 100px;
+    border: 2px solid #FFF;
+    background: linear-gradient(95deg, #FECC00 -2.53%, #FEA800 102.53%);
+    color: #1C1C1C;
+    text-align: center;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 169.432%;
+    transition: all 0.3s;
+}
+.token_box>div:nth-child(3):hover{
+    box-shadow: 0 0 20px #FECC00;
+}
+
+.token_mid>h1 {
+    color: #FFF;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.388px;
+    margin: 8px 0;
+}
+
+.token_mid>table td {
+    color: #CFCFCF;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 140%;
+}
+
+.token_mid>table tr {
+    height: 30px;
+}
+
+.token_mid>table tr>td:nth-child(1) {
+    font-weight: 600;
+}
+
+.token_mid>table tr>td:nth-child(2) {
+    font-weight: 400;
+}
+
+.pagination-section {
+    margin-bottom: 250px;
+}
+
+.pagination-section>button {
+    display: flex;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    color: #344054;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.pagination-section>p {
+    color: #FFFFFF;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.loading-img{
+    animation: rotating 1.5s linear infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes rotating {
+    0%{
+        transform: rotateX(90deg);
+    }
+    25%{
+        transform: rotateX(360deg);
+    }
+    50%{
+        transform: rotateY(90deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}

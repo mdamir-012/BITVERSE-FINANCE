@@ -1,12 +1,16 @@
 import Navbar from "./Components/Navbar";
 import Product from "./Components/Product";
+import { TokenDisplay } from "./Components/TokenDisplay";
+import "./App.css"
+import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <div className="bg-[#7392]"></div>
+    <div className="w-full">
       <Navbar />
       <Product/>
+      <TokenDisplay/>
+      <Footer/>
       
     </div>
   );
