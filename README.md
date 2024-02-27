@@ -1,13 +1,15 @@
-# BITVERSE-FINANCE
+# Bitvers Finance 🚀
 
 
 Welcome to Bitvers Finance – a stunning website crafted with advanced CSS and React, bringing together a seamless blend of design and functionality.
 
+![logo](https://github.com/mdamir-012/BITVERSE-FINANCE/assets/128631499/f85cb751-e92a-4415-bd6a-7eaeed179041)
 
 
 <br>
 
-## Tech Stack:
+## Tech Stack 🛠️:
+
 
 ### Front-end:
 - **React.js**: Empowering dynamic and interactive components.
@@ -20,8 +22,7 @@ Welcome to Bitvers Finance – a stunning website crafted with advanced CSS and 
 
 <br>
 
-
-# Project Links
+# Project Links 🌐
 
 ## Front-end Deployed url:
 
@@ -37,7 +38,8 @@ https://drive.google.com/file/d/1jrWztYA4j485qQIpW8YmJ_IcksdVDwb0/view?usp=shari
 <br>
 
 
-# Screenshots
+# Screenshots 📸
+
 **Home And Navbar**
 ![Home](https://github.com/mdamir-012/BITVERSE-FINANCE/assets/128631499/589ed3ee-9caf-4b5f-a86d-791662f3b13c)
 
