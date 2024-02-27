@@ -4,7 +4,6 @@
 .container {
   padding: 132px 20px 10px 8px;
   gap: 8px;
-  margin-left: 80px;
   background-color: #211d0d;
   display: flex;
   flex-direction: column;
@@ -13,7 +12,7 @@
   position: relative;
 }
 .first_child {
-  width: 991px;
+  width: 1171px;
   padding: 56px 90px;
   display: flex;
   justify-content: center;
@@ -45,16 +44,21 @@
 }
 .top_child {
   display: flex;
+  width:275px;
+  height:80px;
   gap: 17px;
 }
 .top_child div {
-  display: flex;
+  width:80px;
+  height:80px;
+  /* display: flex;
   padding: 18px;
   justify-content: center;
   align-items: center;
   border-radius: 49px;
   background: linear-gradient(135deg, #9c530f 0%, #cfaf06 99.74%);
-  cursor: pointer;
+  cursor: pointer; */
+  
 }
 
 .second_child {
@@ -73,4 +77,41 @@
   line-height: normal;
   letter-spacing: 1.053px;
   opacity: 0.7;
+}
+
+
+/* media queries */
+
+/* Media query for medium screens */
+@media screen and (max-width: 768px) {
+  .first_child {
+    max-width: 100%;
+  }
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 30px 10px;
+  }
+
+  .first_child {
+    padding: 10px;
+    top: -15px;
+  }
+
+  .top_child div {
+    padding: 8px;
+    width:100%;
+  }
+
+  .first_child div h4,
+  .first_child div h5 {
+    font-size: 20px;
+    
+  }
+
+  .second_child p {
+    font-size: 14px;
+  }
 }

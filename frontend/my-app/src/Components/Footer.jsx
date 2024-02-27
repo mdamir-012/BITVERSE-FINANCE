@@ -2,11 +2,13 @@ import React, { useEffect } from "react";
 // import styles from "../styles/footer.css";
 import "../styles/footer.css"
 import FooterLogo  from "../assets/footer-logo.svg";
-// import logo1 from "../assets/coins.png"
-// import logo2 from "../assets/Bituniverse (3)/Social Links/Behance.png"
-// import logo3 from "../assets/Bituniverse (3)/Social Links/Instagram.png"
+import behance from "../assets/Behance.svg";
+import facebook from "../assets/Facebook.png";
+import instalogo from "../assets/Bituniverse (4)/Social Links/Instagram.png"
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+
 
 function Footer() {
   useEffect(() => {
@@ -22,13 +24,13 @@ function Footer() {
         </div>
         <div className={"top_child"} data-aos="fade-up">
           <div>
-            <img src={"logo1"} alt="logo" />
+            <img src={facebook} alt="facebook_logo" />
           </div>
           <div>
-            <img src={"logo2"} alt="logo" />
+            <img src={behance} alt="behance_logo" />
           </div>
           <div>
-            <img src={"logo3"} alt="logo" />
+            <img src={instalogo} alt="instalogo" />
           </div>
         </div>
       </div>

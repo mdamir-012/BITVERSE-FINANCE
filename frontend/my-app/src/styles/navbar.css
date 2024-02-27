@@ -20,6 +20,17 @@
   line-height: normal;
   letter-spacing: 2.56px;
 }
+.nav_child1>div:nth-child(2)>p:nth-child(2) {
+  color: #FFF;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 8.729px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 10.213px;
+}
 .nav_links > div > a {
   text-decoration: none;
   color: #fff;
@@ -35,7 +46,7 @@
   height: 55px;
   border-radius: 10px;
 }
-.main > .lefticon {
+.main > .left_unionicon {
   position: absolute;
   width: 200px;
   height: 200px;
@@ -52,22 +63,7 @@
   }
 }
 
-.main > .radialshadow {
-  width: 200px;
-  height: 50%;
-  position: absolute;
-  bottom: 50px;
-  right: -100px;
-  border-radius: 1125px;
-  background: radial-gradient(
-    circle,
-    rgba(228, 87, 0, 0.3) 0%,
-    rgba(255, 249, 122, 0.1) 0%,
-    rgba(228, 153, 0, 0.2) 1%
-  );
-  filter: blur(59.150001525878906px);
-}
-.main>.righticon {
+.main>.right_penta {
   position: absolute;
   bottom: 0;
   right: -120px;
@@ -110,6 +106,9 @@
   line-height: 169.432%;
   cursor: pointer;
   transition: all 0.3s;
+}
+.last>div:hover{
+  box-shadow: 0 0 20px #FECC00;
 }
 .content {
   width: 943px;
@@ -197,4 +196,83 @@
 .content2>p:nth-child(2) {
   color: #FECC00;
   z-index: 10;
+}
+.gateway_text{
+  width: 719.529px;
+    height: 184.4px;
+    flex-shrink: 0;
+    fill: #F0F6FB;
+    z-index: 11;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: movingLeft 0.5s ease-out;
+}
+
+/* Responsive */
+
+/* Medium screen styles */
+@media screen and (max-width: 1024px) {
+  .last {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* Small screen styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .nav_links>div{
+    display:none;
+  }
+  .nav_links button{
+    width:100%;
+    margin-left:20px;
+    heigh:100%;
+    padding:10px 10px 10px 10px;
+
+  }
+  .nav_child1 > div > p{
+    display:none;
+  }
+  
+
+  .main > .left_unionicon,
+  .main > .right_penta {
+    display: none;
+  }
+
+  .last > p {
+    font-size: 18px;
+  }
+
+  .last > div {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .content {
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  .content > .bitverse_bank {
+    width: 80%;
+    left: 10%;
+  }
+
+  .content2 {
+    font-size: 36px;
+    line-height: 1.4;
+    left: 2%;
+    bottom: -5%;
+  }
+
+  .gateway_text {
+    width: 80%;
+    left: 10%;
+  }
 }
