@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logoYellow from "../assets/logo_home.svg";
 import union from "../assets/Union.png";
 import bank from "../assets/bank.png";
@@ -9,13 +9,24 @@ import yellowBorder from "../assets/yellowborder.svg";
 import pentagon from "../assets/pentagon.png";
 import gateway from "../assets/Gateway.png";
 import "../styles/navbar.css";
+import { useWeb3Modal } from "@web3modal/wagmi/react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const Navbar = () => {
+
+function Navbar() {
+  const { open } = useWeb3Modal();
+
+
+  useEffect(() => {
+    AOS.init();
+}, []);
+
   return (
     <div className="main left-0 w-full p-10 relative overflow-hidden">
       {/* Navbar start here */}
       <div className="navbar w-full flex py-4 px-8 rounded-2xl justify-between items-center ">
-        <div className="nav_child1 h-14 flex justify-items-center gap-2">
+        <div className="nav_child1 h-14 flex  justify-items-center text gap-2">
           <div>
             <img src={logoYellow} alt="logo" />
           </div>
@@ -31,7 +42,7 @@ const Navbar = () => {
             <a href="/#">Taken Utility</a>
             <a href="/#">Roadmap</a>
           </div>
-          <button>Connect Wallet</button>
+          <button onClick={() => open()}>Connect Wallet</button>
         </div>
       </div>
       {/* navbar end */}
@@ -39,9 +50,9 @@ const Navbar = () => {
       <img className="left_unionicon absolute" src={union} alt="left icon" />
       <img className="right_penta" src={pentagon} alt="right icon" />
 
-      <div className="content flex justify-center items-center flex-col gap-0 m-auto my-14">
+      <div data-aos="zoom-in" className="content flex justify-center items-center flex-col gap-0 m-auto my-14">
         <div className="gateway_text">
-          <img src={gateway} alt="" />
+          <img src={gateway} alt="gateway" />
         </div>
         <img className="bitverse_bank" src={bank} alt="" />
         <img className="star1" src={star1} alt="" />
@@ -84,10 +95,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      
       <br />
     </div>
   );
-};
+}
 
 export default Navbar;

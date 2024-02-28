@@ -13,7 +13,6 @@ function App() {
       <Roadmap/>
       <TokenDisplay/>
       <Footer/>
-      
     </div>
   );
 }

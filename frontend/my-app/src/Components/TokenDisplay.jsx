@@ -9,25 +9,28 @@ import "aos/dist/aos.css";
 export function TokenDisplay() {
   const [tokenData, setTokenData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [page,setPage]=useState(1);
+  const [page, setPage] = useState(1);
+
+  const fethcData = async (page) => {
+    setIsLoading(true);
+    try {
+      let response = await fetch(`https://wandering-lime-parka.cyclic.app/token?page=${page}`);
+      let data = await response.json();
+      console.log(data.tokenData);
+      setTokenData(data.tokenData);
+      setIsLoading(false);
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   useEffect(() => {
     AOS.init();
-
-    const fethcData = async () => {
-      setIsLoading(true);
-      try {
-        let response = await fetch("https://wandering-lime-parka.cyclic.app/token/read");
-        let data = await response.json();
-        console.log(data.tokenData);
-        setTokenData(data.tokenData);
-        setIsLoading(false);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    fethcData();
   }, []);
+
+  useEffect(() => {
+    fethcData(page);
+  }, [page]);
 
   console.log(tokenData);
 
@@ -136,9 +139,19 @@ export function TokenDisplay() {
           data-aos-duration="800"
           className="pagination-section flex p-6 justify-center items-center gap-24"
         >
-          <button onClick={()=>setPage(page-1)} disabled={page===1}>Previous</button>
+          <button
+            onClick={() => setPage((prev) => prev - 1)}
+            disabled={page === 1}
+          >
+            Previous
+          </button>
           <p>Page {page} of 10</p>
-          <button onClick={()=>setPage(page+1)} disabled={page===10}>Next</button>
+          <button
+            onClick={() => setPage((prev) => prev + 1)}
+            disabled={page >= 10}
+          >
+            Next
+          </button>
         </div>
       )}
     </div>

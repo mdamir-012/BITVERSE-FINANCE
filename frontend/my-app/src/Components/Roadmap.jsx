@@ -25,9 +25,8 @@ import 'aos/dist/aos.css';
     const handleMouseDown = (e) => {
       setDrag(true);
         setStartX(e.pageX - parentRef.current.offsetLeft);
-        scrollingLeft(parentRef.current.scrollLeft);
+        setScrollLeft(parentRef.current.scrollLeft);
       };
-    
     
       
 

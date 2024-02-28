@@ -9,6 +9,9 @@
   margin: auto;
   z-index: 9999;
 }
+.nav_child1{
+  align-items:center;
+}
 .nav_child1 > div > p:nth-child(1) {
   color: #ffc603;
   leading-trim: both;
@@ -39,12 +42,23 @@
   font-style: normal;
   font-weight: 500;
   line-height: 16.5px;
+  
+
 }
 .nav_links > button {
-  background: #f9d326;
-  width: 187px;
-  height: 55px;
-  border-radius: 10px;
+ 
+    width: 187px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F9D326;
+    color: #000;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 16.5px;
+    font-style: normal;
+    
 }
 .main > .left_unionicon {
   position: absolute;
@@ -187,7 +201,6 @@
   position: absolute;
   left: 5%;
   bottom: -10%;
-  animation: movingRight 0.5s ease-out;
 }
 .content2>p:nth-child(1) {
   z-index: 13;
@@ -208,6 +221,28 @@
     left: 10%;
     animation: movingLeft 0.5s ease-out;
 }
+.mainpartext {
+    width: 719.529px;
+    height: 184.4px;
+    flex-shrink: 0;
+    fill: #F0F6FB;
+    z-index: 11;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: movingLeft 0.5s ease-out;
+}
+@keyframes movingLeft {
+    from{
+        opacity: 0;
+        left: -100%;
+    }
+    to{
+        opacity: 1;
+        left: 10%;
+    }
+}
+
 
 /* Responsive */
 
@@ -275,4 +310,17 @@
     width: 80%;
     left: 10%;
   }
+}
+
+
+@media screen and (max-width: 480px) {
+  .nav_links button{
+    width:90%;
+    margin-left:20px;
+    heigh:100%;
+    padding:5px 10px;
+    font-size:15px;
+
+  }
+
 }
