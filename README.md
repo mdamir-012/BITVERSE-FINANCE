@@ -26,7 +26,7 @@ Welcome to Bitvers Finance – a stunning website crafted with advanced CSS and 
 
 ## Front-end Deployed url:
 
-Explore the live site: [Bitvers Finance Frontend](https://bitverse-finance-glo80sa6z-mdamir-012.vercel.app/)
+Explore the live site: [Bitvers Finance Frontend](https://bitverse-finance.vercel.app/)
 
 ## Back-end Deployed url:
 
