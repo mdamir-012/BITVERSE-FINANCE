@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 export function TokenDisplay() {
   const [tokenData, setTokenData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [page,setPage]=useState(1);
 
   useEffect(() => {
     AOS.init();
@@ -16,7 +17,7 @@ export function TokenDisplay() {
     const fethcData = async () => {
       setIsLoading(true);
       try {
-        let response = await fetch("http://localhost:8080/token/read");
+        let response = await fetch("https://wandering-lime-parka.cyclic.app/token/read");
         let data = await response.json();
         console.log(data.tokenData);
         setTokenData(data.tokenData);
@@ -135,9 +136,9 @@ export function TokenDisplay() {
           data-aos-duration="800"
           className="pagination-section flex p-6 justify-center items-center gap-24"
         >
-          <button>Previous</button>
-          <p>Page 1 of 10</p>
-          <button>Next</button>
+          <button onClick={()=>setPage(page-1)} disabled={page===1}>Previous</button>
+          <p>Page {page} of 10</p>
+          <button onClick={()=>setPage(page+1)} disabled={page===10}>Next</button>
         </div>
       )}
     </div>

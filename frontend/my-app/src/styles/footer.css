@@ -96,8 +96,10 @@
   }
 
   .first_child {
-    padding: 10px;
     top: -15px;
+    gap:10px;
+    padding: 56px 90px;
+    align-items:center;
   }
 
   .top_child div {
