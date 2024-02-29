@@ -26,14 +26,14 @@ Welcome to Bitvers Finance – a stunning website crafted with advanced CSS and 
 
 ## Front-end Deployed url:
 
-Explore the live site: [Bitvers Finance Frontend](https://bitverse-finance.vercel.app/)
+Explore the live site: [Bitvers Finance Frontend](https://md-amir-de6790.netlify.app/)
 
 ## Back-end Deployed url:
 
 Check out the server: [Bitvers Finance Backend](https://wandering-lime-parka.cyclic.app/)
 
 ## Demo Video Link :
-https://drive.google.com/file/d/1jrWztYA4j485qQIpW8YmJ_IcksdVDwb0/view?usp=sharing
+https://drive.google.com/file/d/1E0jQC37CzKFDmfq0dewfTGml0wXTDU_W/view?usp=sharing
 
 <br>
 
